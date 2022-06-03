@@ -14,15 +14,15 @@ int main(void)
 	int n;
 	int lastn;
 
-	srand(time(0));
+i	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	lastn = n % 10;
 
-	if(lastn > 5)
+	if (lastn > 5)
 	{
-		printf("Last digit of %d is and %d greater tha 5\n", n, lastn);
+		printf("Last digit of %d is and %d greater than 5\n", n, lastn);
 	}
-	else if(lastn == 0)
+	else if (lastn == 0)
 	{
 		printf("Last digit of %d is and %d is 0\n", n, lastn);
 	}
