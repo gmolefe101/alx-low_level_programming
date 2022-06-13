@@ -1,4 +1,5 @@
 #include "main.h"
+#include "2-strlen.c"
 
 /**
 * _strlen - Write a function that returns the length of a string
