@@ -1,24 +1,24 @@
 #include "main.h"
-#include <stdio.h>
+#include "2-strlen.c"
 
 /**
-* print_array - Print a number of items in an array of integers
-* @a: The array to print
-* @n: The number of items from the array to print
-* Return: Nothing
-*/
-void print_array(int *a, int n)
+ * puts_half - Write a function that prints half of a string
+ *
+ * @str: string to split
+ */
+void puts_half(char *str)
 {
 	int i;
+	int z = 0;
 
-	i = 0;
-	while (i < n)
+	if (_strlen(str) % 2 != 0)
 	{
-		printf("%d", *(a + i));
-		if (i != n - 1)
-			printf(", ");
-		i++;
+		z += 1;
 	}
-
-	putchar('\n');
+	for (i = (_strlen(str) + z) / 2; i < _strlen(str); i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }
+
