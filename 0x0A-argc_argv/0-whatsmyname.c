@@ -8,6 +8,16 @@
  */
 int main(int argc, char *argv[])
 {
-	printf("%s\n", argv[0]);
+
+	int c = 0;
+
+	while (c < argc)
+	{
+		if (c == 0)
+		{
+			printf("%s\n", argv[c]);
+			break;
+		}
+	}
 	return (0);
 }
