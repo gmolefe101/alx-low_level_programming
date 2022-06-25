@@ -8,7 +8,12 @@
  */
 int main(int argc, char  *argv[])
 {
-	UNUSED(argv);
-	printf("%d\n", argc - 1);
-	return (0);
+	if (argc == 3)
+	{
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+		return (0);
+	}
+	else
+		printf("Error\n");
+	return (1);
 }
