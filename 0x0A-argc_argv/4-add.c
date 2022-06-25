@@ -1,5 +1,5 @@
+#include "main.h"
 #include <stdio.h>
-#include <main.h>
 /**
  * StringCheck - checks string
  * @s: string to check
